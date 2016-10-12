@@ -1,0 +1,26 @@
+
+{% for page in site.pages %}
+    {% if page.tags contains "books" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+    {% if page.tags contains "games" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
+
+
+{% for page in site.pages %}
+    {% if page.tags contains "fitness" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
+
+
+{% for page in site.pages %}
+    {% if page.tags contains "video" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
